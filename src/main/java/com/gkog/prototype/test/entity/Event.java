@@ -19,11 +19,11 @@ public class Event {
     @Column(nullable = false, length = 10)
     private String title;
 
-    @Column(name = "start_date", nullable = false)
-    private LocalDateTime startDate;
+    @Column(name = "start_info", nullable = false)
+    private LocalDateTime startInfo;
 
-    @Column(name = "end_date", nullable = false)
-    private LocalDateTime endDate;
+    @Column(name = "end_info", nullable = false)
+    private LocalDateTime endInfo;
 
     @Column(length = 10)
     private String category;
