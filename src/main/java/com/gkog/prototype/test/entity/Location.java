@@ -18,7 +18,10 @@ public class Location {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String roadAddress;
 
-    @Column(nullable = false, columnDefinition = "GEOMETRY")
-    private Point geography;
+    @Column(nullable = false)
+    private float longitude;
+
+    @Column(nullable = false)
+    private float latitude;
 
 }
