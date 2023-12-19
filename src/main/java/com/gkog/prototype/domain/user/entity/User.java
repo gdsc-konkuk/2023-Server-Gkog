@@ -28,7 +28,7 @@ public class User {
 
     @Column(name = "img_url")
 //    @ColumnDefault("")
-    private String imgUrl;
+    private String profileImgUrl;
 
 
     @Column(name = "provider_type")
@@ -39,5 +39,14 @@ public class User {
         this.providerType = this.providerType == null ? ProviderType.APPLE.getName() : this.providerType;
     }
 
+    @Override
+    public boolean equals(Object obj) {
 
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        User user = (User) obj;
+        return this.nickName.equals(user.getNickName());
+    }
 }
