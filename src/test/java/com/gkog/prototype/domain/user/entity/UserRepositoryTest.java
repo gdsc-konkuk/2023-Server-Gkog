@@ -30,7 +30,7 @@ public class UserRepositoryTest {
         testUser = User.builder()
                 .email("gdsc@gmail.com")
                 .nickName("gdsc")
-                .imgUrl("")
+                .profileImgUrl("")
                 .providerType(ProviderType.APPLE.getName())
                 .build();
     }
