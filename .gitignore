@@ -41,3 +41,6 @@ out/
 ### applications yml ###
 src/main/resources/application.yml
 src/main/resources/application_for_release.yml
+
+### resources ###
+src/main/resources/gcp/
